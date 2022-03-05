@@ -1,3 +1,4 @@
 #!/bin/bash
-chown -h betty:holberton _hello
+chown -h betty:0x01-shell_permissions
+
 
