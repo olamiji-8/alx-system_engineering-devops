@@ -1,9 +1,11 @@
-#!/usr/bin/env bash
-# Indefinitely writes I am alive! to the file /tmp/my_process
-# In between every I am alive! message, the program should pause for 2 seconds
 
-while $1
+#!/usr/bin/env bash
+# writest he mesaage I am alive to /tmp/my_process
+
+
+echo "" > /tmp/my_process
+
+while true;
 do
-echo "I am alive!" >> /tmp/my_process
-sleep 2
+  echo "I am alive!" >> /tmp/my_process
 done
