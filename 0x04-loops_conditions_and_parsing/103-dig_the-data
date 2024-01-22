@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-# This script displays the visitors grouped by IP address and HTTP codes, order greatest to lowest
-awk '{print $1 " " $9}' <apache-access.log | sort | uniq -c | sort -gr
+# script that displays the visitor IP 
+# along with the HTTP status code 
+# from the Apache log file.
+awk -F' ' '{ print $1 " " $9 }' apache-access.log | sort | uniq -c | sort -nr

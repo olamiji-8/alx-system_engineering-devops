@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
-# Displays 'Best School'. Displays Hi on the 9th iteration
+# This script is displaying "Best School" 10 times
+i="0"
 
-index=0
-
-while [ $index -lt 10 ]
+while  [ $i -lt 10 ]
 do
-  if [ $index -eq 9 ]
-  then
-    echo "Hi"
-  fi
-  echo "Best School"
-  (( index++ ))
+echo "Best School"
+if [ $i = 8 ]
+then
+echo "Hi"
+fi
+i=$((i+1))
 done
